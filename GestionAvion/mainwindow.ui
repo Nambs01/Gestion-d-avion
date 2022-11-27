@@ -1,0 +1,3131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1012</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Compagnie Aerienne</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../image/fly.png</normaloff>../image/fly.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1012</width>
+     <height>577</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1012</width>
+     <height>577</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="acceuil">
+     <widget class="QPushButton" name="GestPers">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>270</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(40, 40, 40);
+font: 16pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Gestion des personnels</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>120</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>20</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>==Compagnie Aérienne==</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="GestVol">
+      <property name="geometry">
+       <rect>
+        <x>662</x>
+        <y>270</y>
+        <width>221</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(40, 40, 40);
+font: 16pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Gestion des vols</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="GestAvion">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>270</y>
+        <width>231</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;img hrf=&quot;file:///C:/Users/Gatien/Documents/Nouveau dossier/air-freight.png&quot;&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(40, 40, 40);
+font: 16pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Gestion des avions</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>251</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/fly.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>20</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/se-deconnecter.png</normaloff>../image/se-deconnecter.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <zorder>back</zorder>
+     <zorder>label</zorder>
+     <zorder>GestPers</zorder>
+     <zorder>GestVol</zorder>
+     <zorder>GestAvion</zorder>
+     <zorder>pushButton_9</zorder>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>271</y>
+        <width>60</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Numéro :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>310</y>
+        <width>40</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Type :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>343</y>
+        <width>165</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Date de mise en service :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>200</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Ajout d'un nouveau avion</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/page-daccueil.png</normaloff>../image/page-daccueil.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTableView" name="listeAvion">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>210</y>
+        <width>641</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NUMAV_txt">
+      <property name="geometry">
+       <rect>
+        <x>117</x>
+        <y>271</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;Calibri&quot;;
+</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="DATMS_txt">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>340</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;Calibri&quot;;
+</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="TYPAV_txt">
+      <property name="geometry">
+       <rect>
+        <x>117</x>
+        <y>310</y>
+        <width>151</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_1">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>141</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/schedule.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>1011</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Gestion d'avion</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delAvion">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>530</y>
+        <width>141</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(207, 0, 0);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/delete.png</normaloff>../image/delete.png</iconset>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>465</y>
+        <width>331</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>430</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(145, 145, 109);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string notr="true" comment="Révision">Révision</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/settings (2).png</normaloff>../image/settings (2).png</iconset>
+      </property>
+     </widget>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>490</y>
+        <width>291</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_70">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Numéro d'avion à supprimer :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="numavSup">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>380</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QPushButton" name="saveAvion">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Rounded MT Bold</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(0, 213, 103);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Sauvegarder</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/enregistrer-le-fichier.png</normaloff>../image/enregistrer-le-fichier.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="actAvion">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Rounded MT Bold</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 159, 238);
+</string>
+       </property>
+       <property name="text">
+        <string>Actualiser</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/refresh.png</normaloff>../image/refresh.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <zorder>pushButton_2</zorder>
+     <zorder>splitter</zorder>
+     <zorder>splitter_3</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_3</zorder>
+     <zorder>label_4</zorder>
+     <zorder>label_5</zorder>
+     <zorder>listeAvion</zorder>
+     <zorder>NUMAV_txt</zorder>
+     <zorder>DATMS_txt</zorder>
+     <zorder>TYPAV_txt</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>back_1</zorder>
+     <zorder>label_6</zorder>
+     <zorder>delAvion</zorder>
+     <zorder>line</zorder>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>90</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Révision</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>360</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rapport :</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="texteRev">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>360</y>
+        <width>311</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>160</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Liste des avions à reviser</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="listeAvRev">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>190</y>
+        <width>461</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="searchAvionRev">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>180</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 141, 211);</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/chercher.png</normaloff>../image/chercher.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="searchAvionRev_txt">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>180</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/previous.png</normaloff>../image/previous.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/page-daccueil.png</normaloff>../image/page-daccueil.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>130</y>
+        <width>51</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/transaction.png</normaloff>../image/transaction.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>150</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+color: rgb(232, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Veuillez entre ici le numéro de l'avion que vous souhaitez réviser</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_49">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>20</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/settings.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>220</y>
+        <width>321</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Numéro d'avion :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="numAvRev">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Type :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="TypAvRev">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Date de la réviosion :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDateEdit" name="dateRev">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nombre d'heures de vol :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="nbrH">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QSplitter" name="splitter_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>520</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QPushButton" name="saveRev">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(0, 213, 103);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Sauvegarder</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/enregistrer-le-fichier.png</normaloff>../image/enregistrer-le-fichier.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="actualiserRev">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(0, 149, 223);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Actualiser</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/refresh.png</normaloff>../image/refresh.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <zorder>layoutWidget</zorder>
+     <zorder>splitter_4</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_10</zorder>
+     <zorder>texteRev</zorder>
+     <zorder>label_13</zorder>
+     <zorder>listeAvRev</zorder>
+     <zorder>searchAvionRev</zorder>
+     <zorder>searchAvionRev_txt</zorder>
+     <zorder>pushButton_3</zorder>
+     <zorder>pushButton_4</zorder>
+     <zorder>pushButton_5</zorder>
+     <zorder>label_14</zorder>
+     <zorder>label_49</zorder>
+    </widget>
+    <widget class="QWidget" name="revision_faite">
+     <widget class="QTableView" name="tableRevision">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>150</y>
+        <width>711</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/previous.png</normaloff>../image/previous.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>1011</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Liste des avions revisés</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_57">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>20</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/transaction.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QStackedWidget" name="stackedWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>1011</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="stackedWidgetPage1">
+       <widget class="QTableView" name="tab_nav">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>20</y>
+          <width>611</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>0</y>
+          <width>221</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Calibri&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Liste des personnels navigants</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="numPerso">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>60</y>
+          <width>161</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="geometry">
+         <rect>
+          <x>22</x>
+          <y>60</y>
+          <width>20</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+        </property>
+        <property name="text">
+         <string>ID:</string>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter_2">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>350</y>
+          <width>361</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QPushButton" name="sauv">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 213, 103);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Sauvegarder</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../image/enregistrer-le-fichier.png</normaloff>../image/enregistrer-le-fichier.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="sup">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(241, 0, 0);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../image/delete.png</normaloff>../image/delete.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="actu">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(16, 172, 255);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>Actualiser</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../image/refresh.png</normaloff>../image/refresh.png</iconset>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>21</x>
+          <y>90</y>
+          <width>291</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_33">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Nom :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="nom">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_34">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Prenom(s) :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="prenom">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Adresse :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="adresse">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Telephone :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="tel">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_37">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Fonction :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QComboBox" name="fonction">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Pilote</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Steward</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hôtesse</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_38">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Salaire :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="salaire">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="maximum">
+            <number>99999</number>
+           </property>
+           <property name="singleStep">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_39">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Date d'embauche :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QDateEdit" name="date">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="stackedWidgetPage2_2">
+       <widget class="QTableView" name="tab_non_nav">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>20</y>
+          <width>611</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>0</y>
+          <width>241</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Liste des personnels non navigants</string>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter_5">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>350</y>
+          <width>361</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QPushButton" name="sauv_1">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 213, 103);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Sauvegarder</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../image/enregistrer-le-fichier.png</normaloff>../image/enregistrer-le-fichier.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="sup_2">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(241, 0, 0);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../image/delete.png</normaloff>../image/delete.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="actu_1">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(16, 172, 255);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+
+</string>
+         </property>
+         <property name="text">
+          <string>Actualiser</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../image/refresh.png</normaloff>../image/refresh.png</iconset>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>22</x>
+          <y>90</y>
+          <width>291</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_41">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Nom :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="nom_2">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_42">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Prenom(s) :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="prenom_2">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_47">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Adresse :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="adresse_2">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_43">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Telephone :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="tel_4">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_44">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Fonction :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QComboBox" name="fonction_2">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Administratif</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mecanicien</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_45">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Salaire :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="salaire_2">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="maximum">
+            <number>99999</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_46">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Date d'embauche :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QDateEdit" name="date_2">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/page-daccueil.png</normaloff>../image/page-daccueil.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>805</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Navigants</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Non Navigants</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>1011</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Gestion des personnels</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>-1</y>
+        <width>291</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_3">
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>20</y>
+          <width>121</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../image/customs-agent.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>20</y>
+          <width>121</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../image/travel-agent.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>170</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/employe(1).png</normaloff>../image/employe(1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QLabel" name="label_53">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>140</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Ajout d'un nouveau equipage</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="saveEquipage">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>250</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 213, 103);
+color: rgb(255, 255, 255);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Sauvegarder</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/enregistrer-le-fichier.png</normaloff>../image/enregistrer-le-fichier.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_60">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>1011</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Equipage</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_61">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>10</y>
+        <width>111</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/employe(1).png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/previous.png</normaloff>../image/previous.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>511</width>
+        <height>89</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_54">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ID Pilote :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="pilote1">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="pilote2">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_55">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ID Hotesse :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="hotesse1">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="hotesse2">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="hotesse3">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="hotesse4">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_59">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ID Steward :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="steward1">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="steward2">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableView" name="listEquipage">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>310</y>
+        <width>771</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>1011</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Gestion de vol</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>190</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>160</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Avion</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Equipage</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/page-daccueil.png</normaloff>../image/page-daccueil.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>190</y>
+        <width>621</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>380</y>
+        <width>621</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_6">
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>621</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(232, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Escale</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="saveVolEsc">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 213, 103);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Sauvegarder</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../image/enregistrer-le-fichier.png</normaloff>../image/enregistrer-le-fichier.png</iconset>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>40</y>
+          <width>261</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="equipEsc1">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_51">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>N° Equipage :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_52">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Durée de vol :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="durvolEsc1">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_50">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>N° Avion :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="numAvEsc1">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>41</y>
+          <width>291</width>
+          <height>89</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Ville d'escale :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="3">
+          <widget class="QLineEdit" name="villeEsc1">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QLabel" name="label_24">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Heure d'arrivée à l'escale :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QTimeEdit" name="hArriveEsc1">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QLabel" name="label_25">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Durée à l'éscale :</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2" colspan="2">
+          <widget class="QTimeEdit" name="dureEsc1">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>621</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(232, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Vol direct</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="saveVolDirect">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 213, 103);
+font: 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Sauvegarder </string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../image/enregistrer-le-fichier.png</normaloff>../image/enregistrer-le-fichier.png</iconset>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>0</y>
+        <width>141</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/airplane-flight.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>291</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_18">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Ville de départ:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="vilDep">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_19">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Ville d'arrivée:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="vilArr">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_20">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Heure de départ:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QTimeEdit" name="hDep">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_48">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nombre d'escale:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="comboBox_3">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_21">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Durée de vol:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDoubleSpinBox" name="durVol">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_17">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>N° Equipage :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="numEq">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_22">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+         <property name="text">
+          <string>N° Avion :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="numav">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>layoutWidget</zorder>
+     <zorder>tableView</zorder>
+     <zorder>label_16</zorder>
+     <zorder>label_26</zorder>
+     <zorder>comboBox_2</zorder>
+     <zorder>pushButton_8</zorder>
+     <zorder>stackedWidget_3</zorder>
+     <zorder>label_31</zorder>
+    </widget>
+    <widget class="QWidget" name="page_10">
+     <widget class="QTableView" name="volSearched">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>310</y>
+        <width>851</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_65">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>270</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Liste de tous les vols:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>20</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/se-deconnecter.png</normaloff>../image/se-deconnecter.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="searchVol">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>230</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 141, 211);</string>
+      </property>
+      <property name="text">
+       <string>Rechercher</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/chercher.png</normaloff>../image/chercher.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_69">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>200</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ou</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_71">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>200</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ou</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_62">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>110</y>
+        <width>1011</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Catalogue de vol</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_63">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>40</y>
+        <width>111</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/airplane(2).png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>170</y>
+        <width>911</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(214, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>43</x>
+        <y>180</y>
+        <width>20</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>180</y>
+        <width>16</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSplitter" name="splitter_6">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>200</y>
+        <width>245</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_67">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(232, 0, 0);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Numéro du vol :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="searchNumVolTxt">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>200</y>
+        <width>246</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_68">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(232, 0, 0);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Ville d'arrivée :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="villeArrTxt">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_7">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>200</y>
+        <width>246</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_72">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(232, 0, 0);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Ville de départ :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="villeDepTxt">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_11">
+     <widget class="QLabel" name="label_64">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>1011</width>
+        <height>591</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../Downloads/—Pngtree—airplane aviation_8402151.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_66">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>12</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/fly.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_73">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(0, 157, 235);</string>
+      </property>
+      <property name="text">
+       <string>Compagnie Aerienne</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_74">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>470</y>
+        <width>991</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cette application sert à gérer les gestions d'un compagnie aerienne ainsi que montrer tous les vols prevus.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cette application sert à gérer les gestions d'une compagnie aerienne ainsi que montrer tous les vols prevus.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>20</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/airplane(1).png</normaloff>../image/airplane(1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>20</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/security.png</normaloff>../image/security.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1012</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>GestPers</tabstop>
+  <tabstop>GestVol</tabstop>
+  <tabstop>GestAvion</tabstop>
+  <tabstop>actAvion</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>listeAvion</tabstop>
+  <tabstop>NUMAV_txt</tabstop>
+  <tabstop>TYPAV_txt</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>TypAvRev</tabstop>
+  <tabstop>saveAvion</tabstop>
+  <tabstop>numAvRev</tabstop>
+  <tabstop>nbrH</tabstop>
+  <tabstop>texteRev</tabstop>
+  <tabstop>saveRev</tabstop>
+  <tabstop>listeAvRev</tabstop>
+  <tabstop>searchAvionRev</tabstop>
+  <tabstop>searchAvionRev_txt</tabstop>
+  <tabstop>dateRev</tabstop>
+  <tabstop>actualiserRev</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>tableRevision</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>vilDep</tabstop>
+  <tabstop>vilArr</tabstop>
+  <tabstop>comboBox_2</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>numav</tabstop>
+  <tabstop>numEq</tabstop>
+  <tabstop>hDep</tabstop>
+  <tabstop>comboBox_3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
