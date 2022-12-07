@@ -68,6 +68,8 @@ public:
     QSplitter *splitter;
     QPushButton *saveAvion;
     QPushButton *actAvion;
+    QLabel *label_80;
+    QLabel *totalAvion;
     QWidget *page;
     QLabel *label_7;
     QLabel *label_10;
@@ -126,6 +128,8 @@ public:
     QSpinBox *salaire;
     QLabel *label_39;
     QDateEdit *date;
+    QLabel *label_78;
+    QLabel *persNav;
     QWidget *stackedWidgetPage2_2;
     QTableView *tab_non_nav;
     QLabel *label_40;
@@ -149,6 +153,8 @@ public:
     QSpinBox *salaire_2;
     QLabel *label_46;
     QDateEdit *date_2;
+    QLabel *label_79;
+    QLabel *persNonNav;
     QPushButton *pushButton_7;
     QComboBox *comboBox;
     QLabel *label_15;
@@ -178,6 +184,7 @@ public:
     QLineEdit *steward1;
     QLineEdit *steward2;
     QTableView *listEquipage;
+    QPushButton *sup_3;
     QWidget *page_5;
     QLabel *label_16;
     QLabel *label_26;
@@ -203,27 +210,30 @@ public:
     QLabel *label_24;
     QTimeEdit *hArriveEsc1;
     QLabel *label_25;
-    QTimeEdit *dureEsc1;
+    QDoubleSpinBox *dureEsc1;
     QWidget *page_8;
     QLabel *label_28;
     QPushButton *saveVolDirect;
     QLabel *label_31;
     QWidget *layoutWidget6;
     QGridLayout *gridLayout_5;
-    QLabel *label_18;
+    QLabel *label_17;
     QLineEdit *vilDep;
-    QLabel *label_19;
-    QLineEdit *vilArr;
-    QLabel *label_20;
     QTimeEdit *hDep;
-    QLabel *label_48;
+    QLineEdit *vilArr;
     QComboBox *comboBox_3;
     QLabel *label_21;
+    QLabel *label_20;
+    QLabel *label_19;
     QDoubleSpinBox *durVol;
-    QLabel *label_17;
-    QLineEdit *numEq;
+    QLabel *label_18;
+    QLabel *label_48;
+    QLabel *label_77;
+    QDateEdit *jdepTxt;
     QLabel *label_22;
     QLineEdit *numav;
+    QLineEdit *numEq;
+    QPushButton *pushButton_15;
     QWidget *page_10;
     QTableView *volSearched;
     QLabel *label_65;
@@ -238,7 +248,7 @@ public:
     QFrame *line_4;
     QSplitter *splitter_6;
     QLabel *label_67;
-    QLineEdit *searchNumVolTxt;
+    QLineEdit *searchNumvol;
     QSplitter *splitter_8;
     QLabel *label_68;
     QLineEdit *villeArrTxt;
@@ -252,6 +262,27 @@ public:
     QLabel *label_74;
     QPushButton *pushButton_13;
     QPushButton *pushButton_14;
+    QWidget *page_12;
+    QTableView *listeVol;
+    QPushButton *pushButton_16;
+    QPushButton *pushButton_17;
+    QLabel *label_81;
+    QTableView *VolASupprimer;
+    QLabel *label_82;
+    QLabel *label_83;
+    QPushButton *pushButton_20;
+    QSplitter *splitter_9;
+    QLabel *label_76;
+    QLineEdit *numVolSup;
+    QWidget *page_13;
+    QLabel *label_84;
+    QLabel *label_85;
+    QLineEdit *username;
+    QLineEdit *passwords;
+    QLabel *label_86;
+    QPushButton *pushButton_18;
+    QPushButton *pushButton_19;
+    QLabel *notification;
     QMenuBar *menubar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -396,7 +427,7 @@ public:
         pushButton->setIconSize(QSize(40, 40));
         listeAvion = new QTableView(page_4);
         listeAvion->setObjectName(QStringLiteral("listeAvion"));
-        listeAvion->setGeometry(QRect(370, 210, 641, 361));
+        listeAvion->setGeometry(QRect(370, 170, 641, 351));
         listeAvion->setStyleSheet(QLatin1String("\n"
 "font: 12pt \"Calibri\";"));
         NUMAV_txt = new QLineEdit(page_4);
@@ -516,6 +547,14 @@ public:
         icon6.addFile(QStringLiteral("../image/refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
         actAvion->setIcon(icon6);
         splitter->addWidget(actAvion);
+        label_80 = new QLabel(page_4);
+        label_80->setObjectName(QStringLiteral("label_80"));
+        label_80->setGeometry(QRect(510, 540, 221, 41));
+        label_80->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        totalAvion = new QLabel(page_4);
+        totalAvion->setObjectName(QStringLiteral("totalAvion"));
+        totalAvion->setGeometry(QRect(730, 540, 71, 41));
+        totalAvion->setStyleSheet(QStringLiteral("font: 14pt \"Calibri\";"));
         stackedWidget->addWidget(page_4);
         pushButton_2->raise();
         splitter->raise();
@@ -533,6 +572,8 @@ public:
         label_6->raise();
         delAvion->raise();
         line->raise();
+        label_80->raise();
+        totalAvion->raise();
         page = new QWidget();
         page->setObjectName(QStringLiteral("page"));
         label_7 = new QLabel(page);
@@ -737,7 +778,7 @@ public:
         stackedWidgetPage1->setObjectName(QStringLiteral("stackedWidgetPage1"));
         tab_nav = new QTableView(stackedWidgetPage1);
         tab_nav->setObjectName(QStringLiteral("tab_nav"));
-        tab_nav->setGeometry(QRect(350, 20, 611, 321));
+        tab_nav->setGeometry(QRect(350, 20, 611, 301));
         tab_nav->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
         label_32 = new QLabel(stackedWidgetPage1);
         label_32->setObjectName(QStringLiteral("label_32"));
@@ -754,7 +795,7 @@ public:
         label_58->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
         splitter_2 = new QSplitter(stackedWidgetPage1);
         splitter_2->setObjectName(QStringLiteral("splitter_2"));
-        splitter_2->setGeometry(QRect(460, 350, 361, 31));
+        splitter_2->setGeometry(QRect(470, 330, 361, 31));
         splitter_2->setOrientation(Qt::Horizontal);
         sauv = new QPushButton(splitter_2);
         sauv->setObjectName(QStringLiteral("sauv"));
@@ -878,12 +919,21 @@ public:
 
         gridLayout->addWidget(date, 6, 1, 1, 1);
 
+        label_78 = new QLabel(stackedWidgetPage1);
+        label_78->setObjectName(QStringLiteral("label_78"));
+        label_78->setGeometry(QRect(430, 360, 391, 31));
+        label_78->setStyleSheet(QStringLiteral("font: 75 14pt \"Calibri\";"));
+        persNav = new QLabel(stackedWidgetPage1);
+        persNav->setObjectName(QStringLiteral("persNav"));
+        persNav->setGeometry(QRect(790, 360, 171, 31));
+        persNav->setStyleSheet(QLatin1String("font: 14pt \"Calibri\";\n"
+"font: 75 14pt \"Calibri\";"));
         stackedWidget_4->addWidget(stackedWidgetPage1);
         stackedWidgetPage2_2 = new QWidget();
         stackedWidgetPage2_2->setObjectName(QStringLiteral("stackedWidgetPage2_2"));
         tab_non_nav = new QTableView(stackedWidgetPage2_2);
         tab_non_nav->setObjectName(QStringLiteral("tab_non_nav"));
-        tab_non_nav->setGeometry(QRect(350, 20, 611, 321));
+        tab_non_nav->setGeometry(QRect(350, 20, 611, 301));
         tab_non_nav->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
         label_40 = new QLabel(stackedWidgetPage2_2);
         label_40->setObjectName(QStringLiteral("label_40"));
@@ -891,7 +941,7 @@ public:
         label_40->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
         splitter_5 = new QSplitter(stackedWidgetPage2_2);
         splitter_5->setObjectName(QStringLiteral("splitter_5"));
-        splitter_5->setGeometry(QRect(460, 350, 361, 31));
+        splitter_5->setGeometry(QRect(470, 330, 361, 31));
         splitter_5->setOrientation(Qt::Horizontal);
         sauv_1 = new QPushButton(splitter_5);
         sauv_1->setObjectName(QStringLiteral("sauv_1"));
@@ -1013,6 +1063,14 @@ public:
 
         gridLayout_2->addWidget(date_2, 6, 1, 1, 1);
 
+        label_79 = new QLabel(stackedWidgetPage2_2);
+        label_79->setObjectName(QStringLiteral("label_79"));
+        label_79->setGeometry(QRect(420, 360, 431, 31));
+        label_79->setStyleSheet(QStringLiteral("font: 75 14pt \"Calibri\";"));
+        persNonNav = new QLabel(stackedWidgetPage2_2);
+        persNonNav->setObjectName(QStringLiteral("persNonNav"));
+        persNonNav->setGeometry(QRect(810, 350, 81, 51));
+        persNonNav->setStyleSheet(QStringLiteral("font: 75 14pt \"Calibri\";"));
         stackedWidget_4->addWidget(stackedWidgetPage2_2);
         pushButton_7 = new QPushButton(page_2);
         pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
@@ -1070,7 +1128,7 @@ public:
 "color: rgb(0, 157, 235);"));
         saveEquipage = new QPushButton(page_9);
         saveEquipage->setObjectName(QStringLiteral("saveEquipage"));
-        saveEquipage->setGeometry(QRect(690, 250, 131, 31));
+        saveEquipage->setGeometry(QRect(690, 210, 131, 31));
         saveEquipage->setCursor(QCursor(Qt::PointingHandCursor));
         saveEquipage->setStyleSheet(QLatin1String("background-color: rgb(0, 213, 103);\n"
 "color: rgb(255, 255, 255);\n"
@@ -1091,6 +1149,7 @@ public:
         pushButton_11 = new QPushButton(page_9);
         pushButton_11->setObjectName(QStringLiteral("pushButton_11"));
         pushButton_11->setGeometry(QRect(40, 10, 51, 41));
+        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_11->setStyleSheet(QStringLiteral("border:none;"));
         pushButton_11->setIcon(icon8);
         pushButton_11->setIconSize(QSize(40, 40));
@@ -1170,6 +1229,15 @@ public:
         listEquipage->setObjectName(QStringLiteral("listEquipage"));
         listEquipage->setGeometry(QRect(130, 310, 771, 261));
         listEquipage->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        sup_3 = new QPushButton(page_9);
+        sup_3->setObjectName(QStringLiteral("sup_3"));
+        sup_3->setGeometry(QRect(690, 250, 131, 31));
+        sup_3->setCursor(QCursor(Qt::PointingHandCursor));
+        sup_3->setStyleSheet(QLatin1String("background-color: rgb(241, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"Arial Rounded MT Bold\";\n"
+""));
+        sup_3->setIcon(icon3);
         stackedWidget->addWidget(page_9);
         page_5 = new QWidget();
         page_5->setObjectName(QStringLiteral("page_5"));
@@ -1295,7 +1363,7 @@ public:
 
         gridLayout_3->addWidget(label_25, 2, 0, 1, 2);
 
-        dureEsc1 = new QTimeEdit(layoutWidget5);
+        dureEsc1 = new QDoubleSpinBox(layoutWidget5);
         dureEsc1->setObjectName(QStringLiteral("dureEsc1"));
         dureEsc1->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
@@ -1330,11 +1398,11 @@ public:
         gridLayout_5 = new QGridLayout(layoutWidget6);
         gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
         gridLayout_5->setContentsMargins(0, 0, 0, 0);
-        label_18 = new QLabel(layoutWidget6);
-        label_18->setObjectName(QStringLiteral("label_18"));
-        label_18->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        label_17 = new QLabel(layoutWidget6);
+        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
-        gridLayout_5->addWidget(label_18, 0, 0, 1, 1);
+        gridLayout_5->addWidget(label_17, 7, 0, 1, 1);
 
         vilDep = new QLineEdit(layoutWidget6);
         vilDep->setObjectName(QStringLiteral("vilDep"));
@@ -1342,11 +1410,11 @@ public:
 
         gridLayout_5->addWidget(vilDep, 0, 1, 1, 1);
 
-        label_19 = new QLabel(layoutWidget6);
-        label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        hDep = new QTimeEdit(layoutWidget6);
+        hDep->setObjectName(QStringLiteral("hDep"));
+        hDep->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
-        gridLayout_5->addWidget(label_19, 1, 0, 1, 1);
+        gridLayout_5->addWidget(hDep, 3, 1, 1, 1);
 
         vilArr = new QLineEdit(layoutWidget6);
         vilArr->setObjectName(QStringLiteral("vilArr"));
@@ -1354,54 +1422,60 @@ public:
 
         gridLayout_5->addWidget(vilArr, 1, 1, 1, 1);
 
-        label_20 = new QLabel(layoutWidget6);
-        label_20->setObjectName(QStringLiteral("label_20"));
-        label_20->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
-
-        gridLayout_5->addWidget(label_20, 2, 0, 1, 1);
-
-        hDep = new QTimeEdit(layoutWidget6);
-        hDep->setObjectName(QStringLiteral("hDep"));
-        hDep->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
-
-        gridLayout_5->addWidget(hDep, 2, 1, 1, 1);
-
-        label_48 = new QLabel(layoutWidget6);
-        label_48->setObjectName(QStringLiteral("label_48"));
-        label_48->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
-
-        gridLayout_5->addWidget(label_48, 3, 0, 1, 1);
-
         comboBox_3 = new QComboBox(layoutWidget6);
         comboBox_3->setObjectName(QStringLiteral("comboBox_3"));
         comboBox_3->setCursor(QCursor(Qt::PointingHandCursor));
         comboBox_3->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
-        gridLayout_5->addWidget(comboBox_3, 3, 1, 1, 1);
+        gridLayout_5->addWidget(comboBox_3, 4, 1, 1, 1);
 
         label_21 = new QLabel(layoutWidget6);
         label_21->setObjectName(QStringLiteral("label_21"));
         label_21->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
-        gridLayout_5->addWidget(label_21, 4, 0, 1, 1);
+        gridLayout_5->addWidget(label_21, 5, 0, 1, 1);
+
+        label_20 = new QLabel(layoutWidget6);
+        label_20->setObjectName(QStringLiteral("label_20"));
+        label_20->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+
+        gridLayout_5->addWidget(label_20, 3, 0, 1, 1);
+
+        label_19 = new QLabel(layoutWidget6);
+        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+
+        gridLayout_5->addWidget(label_19, 1, 0, 1, 1);
 
         durVol = new QDoubleSpinBox(layoutWidget6);
         durVol->setObjectName(QStringLiteral("durVol"));
         durVol->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
-        gridLayout_5->addWidget(durVol, 4, 1, 1, 1);
+        gridLayout_5->addWidget(durVol, 5, 1, 1, 1);
 
-        label_17 = new QLabel(layoutWidget6);
-        label_17->setObjectName(QStringLiteral("label_17"));
-        label_17->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        label_18 = new QLabel(layoutWidget6);
+        label_18->setObjectName(QStringLiteral("label_18"));
+        label_18->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
-        gridLayout_5->addWidget(label_17, 5, 0, 1, 1);
+        gridLayout_5->addWidget(label_18, 0, 0, 1, 1);
 
-        numEq = new QLineEdit(layoutWidget6);
-        numEq->setObjectName(QStringLiteral("numEq"));
-        numEq->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        label_48 = new QLabel(layoutWidget6);
+        label_48->setObjectName(QStringLiteral("label_48"));
+        label_48->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
 
-        gridLayout_5->addWidget(numEq, 5, 1, 1, 1);
+        gridLayout_5->addWidget(label_48, 4, 0, 1, 1);
+
+        label_77 = new QLabel(layoutWidget6);
+        label_77->setObjectName(QStringLiteral("label_77"));
+        label_77->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+
+        gridLayout_5->addWidget(label_77, 2, 0, 1, 1);
+
+        jdepTxt = new QDateEdit(layoutWidget6);
+        jdepTxt->setObjectName(QStringLiteral("jdepTxt"));
+        jdepTxt->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+
+        gridLayout_5->addWidget(jdepTxt, 2, 1, 1, 1);
 
         label_22 = new QLabel(layoutWidget6);
         label_22->setObjectName(QStringLiteral("label_22"));
@@ -1415,6 +1489,23 @@ public:
 
         gridLayout_5->addWidget(numav, 6, 1, 1, 1);
 
+        numEq = new QLineEdit(layoutWidget6);
+        numEq->setObjectName(QStringLiteral("numEq"));
+        numEq->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+
+        gridLayout_5->addWidget(numEq, 7, 1, 1, 1);
+
+        pushButton_15 = new QPushButton(page_5);
+        pushButton_15->setObjectName(QStringLiteral("pushButton_15"));
+        pushButton_15->setGeometry(QRect(40, 140, 61, 41));
+        pushButton_15->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_15->setStyleSheet(QLatin1String("border:none;\n"
+"font: 10pt \"Arial Rounded MT Bold\";\n"
+"color: rgb(255, 255, 255);"));
+        QIcon icon11;
+        icon11.addFile(QStringLiteral("../image/folders.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_15->setIcon(icon11);
+        pushButton_15->setIconSize(QSize(40, 40));
         stackedWidget->addWidget(page_5);
         layoutWidget->raise();
         tableView->raise();
@@ -1424,6 +1515,7 @@ public:
         pushButton_8->raise();
         stackedWidget_3->raise();
         label_31->raise();
+        pushButton_15->raise();
         page_10 = new QWidget();
         page_10->setObjectName(QStringLiteral("page_10"));
         volSearched = new QTableView(page_10);
@@ -1496,11 +1588,10 @@ public:
         label_67->setStyleSheet(QLatin1String("color: rgb(232, 0, 0);\n"
 "font: 12pt \"Calibri\";"));
         splitter_6->addWidget(label_67);
-        searchNumVolTxt = new QLineEdit(splitter_6);
-        searchNumVolTxt->setObjectName(QStringLiteral("searchNumVolTxt"));
-        searchNumVolTxt->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
-        searchNumVolTxt->setAlignment(Qt::AlignCenter);
-        splitter_6->addWidget(searchNumVolTxt);
+        searchNumvol = new QLineEdit(splitter_6);
+        searchNumvol->setObjectName(QStringLiteral("searchNumvol"));
+        searchNumvol->setAlignment(Qt::AlignCenter);
+        splitter_6->addWidget(searchNumvol);
         splitter_8 = new QSplitter(page_10);
         splitter_8->setObjectName(QStringLiteral("splitter_8"));
         splitter_8->setGeometry(QRect(380, 200, 246, 22));
@@ -1534,8 +1625,8 @@ public:
         page_11->setObjectName(QStringLiteral("page_11"));
         label_64 = new QLabel(page_11);
         label_64->setObjectName(QStringLiteral("label_64"));
-        label_64->setGeometry(QRect(10, 0, 1011, 591));
-        label_64->setPixmap(QPixmap(QString::fromUtf8("../../../Downloads/\342\200\224Pngtree\342\200\224airplane aviation_8402151.png")));
+        label_64->setGeometry(QRect(10, 10, 1011, 591));
+        label_64->setPixmap(QPixmap(QString::fromUtf8("../image/\342\200\224Pngtree\342\200\224airplane aviation_8402151.png")));
         label_64->setScaledContents(true);
         label_64->setAlignment(Qt::AlignCenter);
         label_66 = new QLabel(page_11);
@@ -1557,19 +1648,136 @@ public:
         pushButton_13->setObjectName(QStringLiteral("pushButton_13"));
         pushButton_13->setGeometry(QRect(810, 20, 81, 61));
         pushButton_13->setCursor(QCursor(Qt::PointingHandCursor));
-        QIcon icon11;
-        icon11.addFile(QStringLiteral("../image/airplane(1).png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_13->setIcon(icon11);
+        QIcon icon12;
+        icon12.addFile(QStringLiteral("../image/airplane(1).png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_13->setIcon(icon12);
         pushButton_13->setIconSize(QSize(50, 50));
         pushButton_14 = new QPushButton(page_11);
         pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
         pushButton_14->setGeometry(QRect(920, 20, 81, 61));
         pushButton_14->setCursor(QCursor(Qt::PointingHandCursor));
-        QIcon icon12;
-        icon12.addFile(QStringLiteral("../image/security.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_14->setIcon(icon12);
+        QIcon icon13;
+        icon13.addFile(QStringLiteral("../image/security.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_14->setIcon(icon13);
         pushButton_14->setIconSize(QSize(50, 50));
         stackedWidget->addWidget(page_11);
+        page_12 = new QWidget();
+        page_12->setObjectName(QStringLiteral("page_12"));
+        listeVol = new QTableView(page_12);
+        listeVol->setObjectName(QStringLiteral("listeVol"));
+        listeVol->setGeometry(QRect(60, 150, 881, 161));
+        listeVol->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        pushButton_16 = new QPushButton(page_12);
+        pushButton_16->setObjectName(QStringLiteral("pushButton_16"));
+        pushButton_16->setGeometry(QRect(640, 500, 131, 31));
+        pushButton_16->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_16->setStyleSheet(QLatin1String("font: 10pt \"Arial Rounded MT Bold\";\n"
+"background-color: rgb(207, 0, 0);\n"
+"color: rgb(255, 255, 255);"));
+        pushButton_16->setIcon(icon3);
+        pushButton_17 = new QPushButton(page_12);
+        pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
+        pushButton_17->setGeometry(QRect(40, 10, 51, 41));
+        pushButton_17->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_17->setStyleSheet(QStringLiteral("border:none;"));
+        pushButton_17->setIcon(icon8);
+        pushButton_17->setIconSize(QSize(40, 40));
+        label_81 = new QLabel(page_12);
+        label_81->setObjectName(QStringLiteral("label_81"));
+        label_81->setGeometry(QRect(70, 310, 241, 41));
+        label_81->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        VolASupprimer = new QTableView(page_12);
+        VolASupprimer->setObjectName(QStringLiteral("VolASupprimer"));
+        VolASupprimer->setGeometry(QRect(60, 350, 881, 141));
+        VolASupprimer->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        label_82 = new QLabel(page_12);
+        label_82->setObjectName(QStringLiteral("label_82"));
+        label_82->setGeometry(QRect(470, 20, 71, 61));
+        label_82->setPixmap(QPixmap(QString::fromUtf8("../image/folders.png")));
+        label_82->setScaledContents(true);
+        label_83 = new QLabel(page_12);
+        label_83->setObjectName(QStringLiteral("label_83"));
+        label_83->setGeometry(QRect(5, 90, 1001, 21));
+        label_83->setStyleSheet(QLatin1String("font: 20pt \"Arial Rounded MT Bold\";\n"
+"color: rgb(0, 157, 235);"));
+        label_83->setAlignment(Qt::AlignCenter);
+        pushButton_20 = new QPushButton(page_12);
+        pushButton_20->setObjectName(QStringLiteral("pushButton_20"));
+        pushButton_20->setGeometry(QRect(480, 500, 131, 31));
+        pushButton_20->setStyleSheet(QLatin1String("background-color: rgb(0, 213, 103);\n"
+"font: 10pt \"Arial Rounded MT Bold\";\n"
+"color: rgb(255, 255, 255);"));
+        pushButton_20->setIcon(icon5);
+        splitter_9 = new QSplitter(page_12);
+        splitter_9->setObjectName(QStringLiteral("splitter_9"));
+        splitter_9->setGeometry(QRect(70, 500, 351, 31));
+        splitter_9->setOrientation(Qt::Horizontal);
+        label_76 = new QLabel(splitter_9);
+        label_76->setObjectName(QStringLiteral("label_76"));
+        label_76->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        splitter_9->addWidget(label_76);
+        numVolSup = new QLineEdit(splitter_9);
+        numVolSup->setObjectName(QStringLiteral("numVolSup"));
+        numVolSup->setStyleSheet(QStringLiteral("font: 12pt \"Calibri\";"));
+        numVolSup->setAlignment(Qt::AlignCenter);
+        splitter_9->addWidget(numVolSup);
+        stackedWidget->addWidget(page_12);
+        page_13 = new QWidget();
+        page_13->setObjectName(QStringLiteral("page_13"));
+        label_84 = new QLabel(page_13);
+        label_84->setObjectName(QStringLiteral("label_84"));
+        label_84->setGeometry(QRect(340, 80, 391, 411));
+        label_84->setStyleSheet(QLatin1String("\n"
+"background-color: #4071FF;\n"
+"border-radius:10px;"));
+        label_85 = new QLabel(page_13);
+        label_85->setObjectName(QStringLiteral("label_85"));
+        label_85->setGeometry(QRect(490, 130, 91, 81));
+        label_85->setPixmap(QPixmap(QString::fromUtf8("../image/login.png")));
+        label_85->setScaledContents(true);
+        username = new QLineEdit(page_13);
+        username->setObjectName(QStringLiteral("username"));
+        username->setGeometry(QRect(370, 260, 331, 41));
+        username->setStyleSheet(QLatin1String("border-radius:20px;\n"
+"padding: 0 20px 0 20px;\n"
+"font: 14pt \"Calibri\";"));
+        passwords = new QLineEdit(page_13);
+        passwords->setObjectName(QStringLiteral("passwords"));
+        passwords->setGeometry(QRect(370, 330, 331, 41));
+        passwords->setStyleSheet(QLatin1String("border-radius:20px;\n"
+"padding: 0 20px 0 20px;\n"
+"font: 14pt \"Calibri\";"));
+        passwords->setEchoMode(QLineEdit::Password);
+        label_86 = new QLabel(page_13);
+        label_86->setObjectName(QStringLiteral("label_86"));
+        label_86->setGeometry(QRect(340, 209, 391, 31));
+        label_86->setStyleSheet(QLatin1String("font: 12pt \"Arial Rounded MT Bold\";\n"
+"color: rgb(255, 255, 255);"));
+        label_86->setTextFormat(Qt::PlainText);
+        label_86->setAlignment(Qt::AlignCenter);
+        pushButton_18 = new QPushButton(page_13);
+        pushButton_18->setObjectName(QStringLiteral("pushButton_18"));
+        pushButton_18->setGeometry(QRect(460, 400, 161, 41));
+        pushButton_18->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_18->setStyleSheet(QLatin1String("background-color: rgb(0, 213, 103);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 13pt \"Arial Rounded MT Bold\";\n"
+"border-radius:20px;\n"
+""));
+        pushButton_19 = new QPushButton(page_13);
+        pushButton_19->setObjectName(QStringLiteral("pushButton_19"));
+        pushButton_19->setGeometry(QRect(40, 10, 51, 41));
+        pushButton_19->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_19->setStyleSheet(QStringLiteral("border:none;"));
+        pushButton_19->setIcon(icon8);
+        pushButton_19->setIconSize(QSize(40, 40));
+        notification = new QLabel(page_13);
+        notification->setObjectName(QStringLiteral("notification"));
+        notification->setGeometry(QRect(340, 370, 391, 20));
+        notification->setStyleSheet(QLatin1String("font: 10pt \"Calibri\";\n"
+"color: rgb(223, 0, 0);"));
+        notification->setAlignment(Qt::AlignCenter);
+        stackedWidget->addWidget(page_13);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
@@ -1604,17 +1812,15 @@ public:
         QWidget::setTabOrder(vilDep, vilArr);
         QWidget::setTabOrder(vilArr, comboBox_2);
         QWidget::setTabOrder(comboBox_2, pushButton_8);
-        QWidget::setTabOrder(pushButton_8, numav);
-        QWidget::setTabOrder(numav, numEq);
-        QWidget::setTabOrder(numEq, hDep);
+        QWidget::setTabOrder(pushButton_8, hDep);
         QWidget::setTabOrder(hDep, comboBox_3);
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
-        stackedWidget_4->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(6);
+        stackedWidget_4->setCurrentIndex(1);
         stackedWidget_2->setCurrentIndex(0);
-        stackedWidget_3->setCurrentIndex(1);
+        stackedWidget_3->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1643,6 +1849,8 @@ public:
         label_70->setText(QApplication::translate("MainWindow", "Num\303\251ro d'avion \303\240 supprimer :", 0));
         saveAvion->setText(QApplication::translate("MainWindow", "Sauvegarder", 0));
         actAvion->setText(QApplication::translate("MainWindow", "Actualiser", 0));
+        label_80->setText(QApplication::translate("MainWindow", "Nombre total des avions :", 0));
+        totalAvion->setText(QApplication::translate("MainWindow", "TextLabel", 0));
         label_7->setText(QApplication::translate("MainWindow", "R\303\251vision", 0));
         label_10->setText(QApplication::translate("MainWindow", "Rapport :", 0));
         label_13->setText(QApplication::translate("MainWindow", "Liste des avions \303\240 reviser", 0));
@@ -1654,7 +1862,7 @@ public:
         label_49->setText(QString());
         label_9->setText(QApplication::translate("MainWindow", "Num\303\251ro d'avion :", 0));
         label_8->setText(QApplication::translate("MainWindow", "Type :", 0));
-        label_11->setText(QApplication::translate("MainWindow", "Date de la r\303\251viosion :", 0));
+        label_11->setText(QApplication::translate("MainWindow", "Date de la r\303\251vision :", 0));
         label_12->setText(QApplication::translate("MainWindow", "Nombre d'heures de vol :", 0));
         saveRev->setText(QApplication::translate("MainWindow", "Sauvegarder", 0));
         actualiserRev->setText(QApplication::translate("MainWindow", "Actualiser", 0));
@@ -1680,6 +1888,8 @@ public:
         );
         label_38->setText(QApplication::translate("MainWindow", "Salaire :", 0));
         label_39->setText(QApplication::translate("MainWindow", "Date d'embauche :", 0));
+        label_78->setText(QApplication::translate("MainWindow", "Le nombre total des personnels navigants est", 0));
+        persNav->setText(QApplication::translate("MainWindow", "TextLabel", 0));
         label_40->setText(QApplication::translate("MainWindow", "Liste des personnels non navigants", 0));
         sauv_1->setText(QApplication::translate("MainWindow", "Sauvegarder", 0));
         sup_2->setText(QApplication::translate("MainWindow", "Supprimer", 0));
@@ -1697,6 +1907,8 @@ public:
         );
         label_45->setText(QApplication::translate("MainWindow", "Salaire :", 0));
         label_46->setText(QApplication::translate("MainWindow", "Date d'embauche :", 0));
+        label_79->setText(QApplication::translate("MainWindow", "Le nombre total des personnels non navigants est", 0));
+        persNonNav->setText(QApplication::translate("MainWindow", "TextLabel", 0));
         pushButton_7->setText(QString());
         comboBox->clear();
         comboBox->insertItems(0, QStringList()
@@ -1715,6 +1927,7 @@ public:
         label_54->setText(QApplication::translate("MainWindow", "ID Pilote :", 0));
         label_55->setText(QApplication::translate("MainWindow", "ID Hotesse :", 0));
         label_59->setText(QApplication::translate("MainWindow", "ID Steward :", 0));
+        sup_3->setText(QApplication::translate("MainWindow", "Supprimer", 0));
         label_16->setText(QApplication::translate("MainWindow", "Gestion de vol", 0));
         label_26->setText(QString());
         comboBox_2->clear();
@@ -1734,19 +1947,21 @@ public:
         label_28->setText(QApplication::translate("MainWindow", "Vol direct", 0));
         saveVolDirect->setText(QApplication::translate("MainWindow", "Sauvegarder ", 0));
         label_31->setText(QString());
-        label_18->setText(QApplication::translate("MainWindow", "Ville de d\303\251part:", 0));
-        label_19->setText(QApplication::translate("MainWindow", "Ville d'arriv\303\251e:", 0));
-        label_20->setText(QApplication::translate("MainWindow", "Heure de d\303\251part:", 0));
-        label_48->setText(QApplication::translate("MainWindow", "Nombre d'escale:", 0));
+        label_17->setText(QApplication::translate("MainWindow", "N\302\260 Equipage :", 0));
         comboBox_3->clear();
         comboBox_3->insertItems(0, QStringList()
          << QApplication::translate("MainWindow", "0", 0)
          << QApplication::translate("MainWindow", "1", 0)
         );
         label_21->setText(QApplication::translate("MainWindow", "Dur\303\251e de vol:", 0));
-        label_17->setText(QApplication::translate("MainWindow", "N\302\260 Equipage :", 0));
+        label_20->setText(QApplication::translate("MainWindow", "Heure de d\303\251part:", 0));
+        label_19->setText(QApplication::translate("MainWindow", "Ville d'arriv\303\251e:", 0));
+        label_18->setText(QApplication::translate("MainWindow", "Ville de d\303\251part:", 0));
+        label_48->setText(QApplication::translate("MainWindow", "Nombre d'escale:", 0));
+        label_77->setText(QApplication::translate("MainWindow", "Jour du vol", 0));
         label_22->setText(QApplication::translate("MainWindow", "N\302\260 Avion :", 0));
-        label_65->setText(QApplication::translate("MainWindow", "Liste de tous les vols:", 0));
+        pushButton_15->setText(QString());
+        label_65->setText(QApplication::translate("MainWindow", "Liste des vols de cette semaine:", 0));
         pushButton_12->setText(QString());
         searchVol->setText(QApplication::translate("MainWindow", "Rechercher", 0));
         label_69->setText(QApplication::translate("MainWindow", "ou", 0));
@@ -1765,6 +1980,21 @@ public:
         label_74->setText(QApplication::translate("MainWindow", "Cette application sert \303\240 g\303\251rer les gestions d'une compagnie aerienne ainsi que montrer tous les vols prevus.", 0));
         pushButton_13->setText(QString());
         pushButton_14->setText(QString());
+        pushButton_16->setText(QApplication::translate("MainWindow", "Supprimer", 0));
+        pushButton_17->setText(QString());
+        label_81->setText(QApplication::translate("MainWindow", "Liste des vols  effectu\303\251s non liber\303\251s:", 0));
+        label_82->setText(QString());
+        label_83->setText(QApplication::translate("MainWindow", "Archive de vol", 0));
+        pushButton_20->setText(QApplication::translate("MainWindow", "Liberer", 0));
+        label_76->setText(QApplication::translate("MainWindow", "Entez ici le num\303\251ro de vol :", 0));
+        label_84->setText(QString());
+        label_85->setText(QString());
+        username->setPlaceholderText(QApplication::translate("MainWindow", "Username", 0));
+        passwords->setPlaceholderText(QApplication::translate("MainWindow", "Passwords", 0));
+        label_86->setText(QApplication::translate("MainWindow", "Login", 0));
+        pushButton_18->setText(QApplication::translate("MainWindow", "Se connecter", 0));
+        pushButton_19->setText(QString());
+        notification->setText(QString());
     } // retranslateUi
 
 };

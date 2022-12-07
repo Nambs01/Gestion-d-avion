@@ -11,6 +11,7 @@
 #include <QSqlQuery>
 #include <QSqlRecord>
 #include <QSqlQueryModel>
+#include <QDate>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -94,11 +95,27 @@ private slots:
 
     void on_pushButton_9_clicked();
 
-    void on_commandLinkButton_2_clicked();
-
     void on_pushButton_14_clicked();
 
     void on_pushButton_13_clicked();
+
+    void on_pushButton_15_clicked();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_17_clicked();
+
+    void on_pushButton_18_clicked();
+
+    void on_pushButton_19_clicked();
+
+    void on_username_editingFinished();
+
+    void on_passwords_editingFinished();
+
+    void on_sup_3_clicked();
+
+    void on_pushButton_20_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -115,5 +132,6 @@ private:
     QString total_PersonnelNav;
     QString total_PersonnelNonNav;
     QSqlQueryModel *avionSearched;
+    QSqlQueryModel *volSUP;
 };
 #endif // MAINWINDOW_H
